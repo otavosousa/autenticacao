@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+<h1>Autenticaçãp com Google OAuth e React</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Google Cloud Platform</h2>
+<i>Visto que a plataforma é meio confusa de se utilizar acho interessante criar um mini tutorial dela para obtermos o ID do Google para usarmos a API</i>
+<br>
+<br>
+Criando novo projeto precisamos indicar o nome.
+<br>
+<div style="display: flex; justify-content: space-around;">
+    <img src="./tutorial/1.png" width="45%" height="400"/>
+    <img src="./tutorial/2.png" width="45%" height="400"/>
+</div>
+<br>
+<br>
+Agora devemos selecionar o nosso projeto criado
+<br>
+<div style="display: flex; justify-content: space-around;">
+    <img src="./tutorial/3.png" width="45%" height="400"/>
+    <img src="./tutorial/4.png" width="45%" height="400"/>
+</div>
+<br>
+<br>
+Voltamos para o menu esquerdo e clicamos em credenciais. Nessa página temos que clicar na sessão que diz para configurarmos o OAuth. Na próxima página devemos selecionar o tipo de usuario como externo que indica que qualquer usuário possa logar.
+<br>
+<div style="display: flex; justify-content: space-around;">
+    <img src="./tutorial/6.png" width="45%" height="400"/>
+    <img src="./tutorial/7.png" width="45%" height="400"/>
+</div>
+<br>
+<br>
+Posteriormente temos que adicionar informações a respeito da nossa aplicação como nome, email de suporte e email de contato. Os outros campos não precisam ser alterados. Sendo assim, é só confirmar as outras telas até sermos redirecionados para o dashboard.
+<br>
+<div style="display: flex; justify-content: space-around;">
+    <img src="./tutorial/8.png" width="45%" height="400"/>
+</div>
+<br>
+<br>
+Já no dashboard, devemos selecionar no menu esquerdo à sessão de credenciais. Ao entrarmos nela clicamos no botão criar credenciais e selecionamos OAuth client ID.
+<br>
+<div style="display: flex; justify-content: space-around;">
+    <img src="./tutorial/10.png" width="45%" height="400"/>
+    <img src="./tutorial/11.png" width="45%" height="400"/>
+</div>
+<br>
+<br>
+Após isso, temos criar nosso client id. Para isso, selecionamos o tipo da aplicação, seu nome, e a uri do seu site, no caso se estiver rodando localmente, utilizar a porta em que a aplicação está sendo servida (react normalmente roda na porta 3000)
+<br>
+<div style="display: flex; justify-content: space-around;">
+    <img src="./tutorial/12.png" width="45%" height="400"/>
+</div>
+<br>
+<br>
+Voltamos à sessão de credenciais e selecionamos nosso projeto. Ao clicar nele, nos é obtido o ID do cliente.
+<br>
+<div style="display: flex; justify-content: space-around;">
+    <img src="./tutorial/13.png" width="45%" height="400"/>
+    <img src="./tutorial/14.png" width="45%" height="400"/>
+</div>
+<br>
+<br>
+Agora é só utilizar esse id no componente que a biblioteca nos fornece e ter acesso à API do Google para obter as informações dos usuários.
+<br>
 
-## Available Scripts
+<a href="https://github.com/anthonyjgrove/react-google-login">React Google login</a> 
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
